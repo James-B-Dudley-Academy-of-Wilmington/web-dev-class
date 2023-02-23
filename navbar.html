@@ -1,0 +1,57 @@
+<html>
+<head>
+  <style>
+    /*
+        this is a comment in CSS Comments are used to describe and document code :D
+    */
+
+
+    /*
+        We set our header to flex so we can middle align the items  inside our header
+    */
+    header {
+      display: flex;
+      align-items: center;
+    }
+
+
+    /*
+        Our logo image is inside a 'container'
+        The `flex-grow` property is what 'pushes' the other <a> tags to the right.
+    */
+    .logo-container {
+      flex-grow: 1;
+    }
+
+
+    /*
+        This select means 'all <a> tags INSIDE of our <header> tag'
+    */
+    header a {
+      /* setting text-decoration to 'none' removes the underline */
+      text-decoration: none;
+      font-size: 24px;
+      margin-left: 24px;
+
+      /* change this padding to a smaller or larger value... what changes? */
+      padding: 12px;
+
+      background: red;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <!-- this is a comment in HTML -->
+    <div class="logo-container">
+      <img src="logo.png" alt="logo" width="300">
+    </div>
+    <a href="#">Shop</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+    <a href="#">Log In</a>
+    <a href="#">Sign Up</a>
+  </header>
+</body>
+</html>
